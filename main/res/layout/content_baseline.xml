@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="#64141112">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="example.loloangela.GRR.BaselineActivity"
+        android:background="#64141112"
+        tools:showIn="@layout/activity_baseline">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the one you like the MOST."
+            android:id="@+id/likeMostEV"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/LikeMost"
+            android:layout_below="@+id/likeMostEV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:text="Hip Hop"
+                android:id="@+id/hiphopLM"
+                android:layout_below="@+id/likeMostEV"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:layout_weight="0.12" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gangsta"
+                android:id="@+id/gangstaLM"
+                android:layout_weight="0.12"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R&amp;B"
+                android:id="@+id/rnbLM"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lyricism"
+                android:id="@+id/lyricLM"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trapLM"
+                android:checked="false"
+                android:text="Trap" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indie"
+                android:id="@+id/indieLM"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark"
+                android:id="@+id/darkLM"
+                android:checked="false" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.12"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the one you like the LEAST."
+            android:id="@+id/least_mostTV"
+            android:textSize="20dp"
+            android:layout_below="@+id/LikeMost"
+            android:layout_alignRight="@+id/likeMostEV"
+            android:layout_alignEnd="@+id/likeMostEV"
+            android:paddingTop="10dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/LikeLeast"
+            android:layout_below="@+id/least_mostTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:text="Hip Hop"
+                android:id="@+id/hiphopLL"
+                android:layout_below="@+id/likeMostEV"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:layout_weight="0.12" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gangsta"
+                android:id="@+id/gangstaLL"
+                android:layout_weight="0.12"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R&amp;B"
+                android:id="@+id/rnbLL"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lyricism"
+                android:id="@+id/lyricLL"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trapLL"
+                android:checked="false"
+                android:text="Trap" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indie"
+                android:id="@+id/indieLL"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark"
+                android:id="@+id/darkLL"
+                android:checked="false" />
+
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitBaseline"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.12"
+            android:layout_below="@+id/LikeLeast"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+
+

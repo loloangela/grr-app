@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Station Name"
+        android:id="@+id/stationTV"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:paddingTop="60dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/stationPic"
+        android:layout_alignStart="@+id/stationPic" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:id="@+id/stationPic"
+        android:layout_below="@id/stationTV"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image_placeholder"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_below="@+id/stationPic"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:id="@+id/tableLayout"
+        android:paddingBottom="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true" >
+        <TableRow>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/stop"
+                android:background="@drawable/stop"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/play"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/play"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pause"
+                android:layout_gravity="right"
+                android:background="@drawable/pause"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fav"
+                android:layout_gravity="right"
+                android:background="@drawable/fav_add"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

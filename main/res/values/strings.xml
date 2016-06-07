@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">RadioTestAgain</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_validate">ValidateActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="menu">Menu</string>
+    <string name="logout">Logout</string>
+    <string name="close">Close</string>
+    <string name="Home">Home</string>
+    <string-array name="nav_menu">
+        <item>Home</item>
+        <item>All Stations</item>
+        <item>Favorites</item>
+        <item>Recommended</item>
+    </string-array>
+    <string name="title_activity_list_all">ListAllActivity</string>
+    <string name="allStats">All Stations</string>
+    <string name="title_activity_list_favs">ListFavsActivity</string>
+    <string name="title_activity_baseline">BaselineActivity</string>
+
+    <!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+</resources>
