@@ -10,3 +10,5 @@ It also allows users to rate stations using a five star rating system. User pref
 to calculate a recommended station to the user. Below is the android project files for this app.
 This app was created for the capstone  at my university. This is my first app and will be available 
 via google play... soon :smile:
+
+__**__ For quick access to the [Java](https://github.com/loloangela/grr-app/tree/master/GRR/app/src/main/java/example/loloangela/GRR), [Layouts](https://github.com/loloangela/grr-app/tree/master/GRR/app/src/main/res/layout), and [AndroidManifest](https://github.com/loloangela/grr-app/blob/master/GRR/app/src/main/AndroidManifest.xml)
