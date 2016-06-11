@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.loloangela.GRR">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/grr"
+        android:label="Global Rap Radio"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".RadioService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".MapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Global Rap Radio"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.loloangela.GRR.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".RadioActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Radio"
+            android:parentActivityName=".MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.loloangela.GRR.MapActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Global Rap Radio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ValidateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Login"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:textColorPrimary="#000000"
+            android:theme="@style/AppTheme.CustomTheme">
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="example.loloangela.radiotestagain.LoginActivity" /> -->
+        </activity>
+        <activity
+            android:name=".SigninActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Sign Up"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:textColorPrimary="@android:color/primary_text_dark"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".ListAllActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="All Stations"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListFavsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Favorites"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BaselineActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
